@@ -1,0 +1,10 @@
+:root {
+  --purple: #67317c;
+  --gold: #f4af36;
+  --grey-darker: #606f7b;
+  --font: 'Noto Sans';
+
+  --bl-color-primary:     var(--purple);
+  --bl-color-secondary:   var(--gold);
+  --bl-color-background:  var(--grey-darker);
+}
