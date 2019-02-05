@@ -1,16 +1,22 @@
-// Import the LitElement base class and html helper function
 import { LitElement, html } from 'lit-element';
 
-// Extend the LitElement base class
 class BLNameplate extends LitElement {
+  static get properties() {
+    return {
+      name: { type: String }
+    };
+  }
+
   render() {
     return html`
       <style>
         :host {
           display: block;
+          color: var(--bl-color-secondary);
         }
       </style>
-      <p>A paragraph</p>
+
+      <p>Runner: ${this.name}</p>
     `;
   }
 }

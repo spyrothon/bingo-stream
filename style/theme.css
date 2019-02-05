@@ -1,10 +1,12 @@
-:root {
-  --purple: #67317c;
-  --gold: #f4af36;
-  --grey-darker: #606f7b;
-  --font: 'Noto Sans';
+@import './util/colors.css';
 
-  --bl-color-primary:     var(--purple);
-  --bl-color-secondary:   var(--gold);
-  --bl-color-background:  var(--grey-darker);
+:root {
+  /* Spyrothon branding */
+  --st-purple: #67317c;
+  --st-gold: #f4af36;
+
+  /* Element theming */
+  --bl-color-primary:     var(--purple-lightest);
+  --bl-color-secondary:   var(--orange-light);
+  --bl-color-background:  var(--purple-darkest);
 }
