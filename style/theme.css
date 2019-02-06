@@ -5,8 +5,22 @@
   --st-purple: #67317c;
   --st-gold: #f4af36;
 
+  --font-display: system-ui, sans-serif;
+  --font-mono: monospace;
+  --font-serif: serif;
+
+
   /* Element theming */
   --bl-color-primary:     var(--purple-lightest);
   --bl-color-secondary:   var(--orange-light);
   --bl-color-background:  var(--purple-darkest);
+
+  --bl-gradient-primary: linear-gradient(160deg, var(--pink-dark), var(--purple) 60%, var(--purple-light));
+  --bl-gradient-secondary: linear-gradient(160deg, var(--yellow-dark), var(--orange) 30% 70%, var(--orange-light));
+  --bl-gradient-background: linear-gradient(177deg, var(--pink-darkest), var(--purple-darkest) 70%, var(--purple-darker));
+
+  --bl-shadow-primary: 0 0 16px var(--purple-darkest);
+  --bl-inset-shadow-primary: 0 0 30px var(--purple-darkest);
+  --bl-shadow-secondary: 0 0 16px var(--orange);
+  --bl-inset-shadow-secondary: inset 0 0 40px var(--orange-darker);
 }
