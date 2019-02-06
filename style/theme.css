@@ -12,7 +12,7 @@
 
   /* Element theming */
   --bl-color-primary:     var(--purple-lightest);
-  --bl-color-secondary:   var(--orange-light);
+  --bl-color-secondary:   var(--grey-lightest);
   --bl-color-background:  var(--purple-darkest);
 
   --bl-gradient-primary: linear-gradient(160deg, var(--pink-dark), var(--purple) 60%, var(--purple-light));

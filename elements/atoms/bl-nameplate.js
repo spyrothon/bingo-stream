@@ -18,9 +18,8 @@ class BLNameplate extends LitElement {
         .nameplate {
           /* Sizing */
           position: relative;
-          width: 320px;
+          width: 230px;
           padding: 0.50em;
-          margin: 4px;
           text-align: center;
 
           /* Border gradient */
@@ -33,10 +32,9 @@ class BLNameplate extends LitElement {
           box-shadow: var(--bl-inset-shadow-secondary);
 
           /* Text appearance */
-          text-transform: uppercase;
-          font-size: 22px;
+          font-size: 18px;
           font-weight: 300;
-          letter-spacing: 0.13em;
+          letter-spacing: 0.07em;
           text-shadow: var(--bl-shadow-secondary);
         }
       </style>
