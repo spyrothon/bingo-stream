@@ -3,7 +3,8 @@ import { LitElement, html } from 'lit-element';
 class BLNameplate extends LitElement {
   static get properties() {
     return {
-      name: { type: String }
+      name: { type: String },
+      color: { type: String }
     };
   }
 
@@ -19,7 +20,6 @@ class BLNameplate extends LitElement {
           /* Sizing */
           position: relative;
           width: 230px;
-          padding: 0.50em;
           text-align: center;
 
           /* Border gradient */
@@ -37,10 +37,23 @@ class BLNameplate extends LitElement {
           letter-spacing: 0.07em;
           text-shadow: var(--bl-shadow-secondary);
         }
+
+        .text {
+          display: block;
+          margin: auto;
+          padding: 8px 4px;
+          z-index: 10;
+          background-color: ${this.color};
+        }
+
+        .background {
+          opacity: 0.4;
+        }
       </style>
 
       <div class="nameplate">
-        ${this.name}
+        <span class="background"></span>
+        <span class="text">${this.name}</span>
       </div>
     `;
   }
