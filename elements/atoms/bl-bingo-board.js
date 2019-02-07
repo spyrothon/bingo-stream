@@ -1,5 +1,4 @@
 import { LitElement, html } from 'lit-element';
-import logo from '../../assets/bingo_league_logo--shadowless.png';
 
 import { spyro2BingoList } from '../../bingo/spyro_4.1.js';
 import { bingoGenerator } from '../../bingo/generator.js';

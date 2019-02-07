@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit-element';
-import logo from '../../assets/bingo_league_logo--shadowless.png';
+import logo from '../../assets/logo/transparent/bingo_league_logo@0,33x.png';
 
 class BLLogo extends LitElement {
   static get properties() {
@@ -14,7 +14,6 @@ class BLLogo extends LitElement {
         }
 
         img {
-          filter: drop-shadow(var(--bl-shadow-primary));
           width: 100%;
         }
       </style>
