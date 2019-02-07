@@ -19,7 +19,7 @@ class BLBingoBoard extends LitElement {
   renderGoals() {
     return this.goals.map((goal) => {
       return html`
-        <div class="bingo-cell">${goal.name}</div>
+        <span class="bingo-cell"><span>${goal.name}</span></span>
       `;
     });
   }
@@ -52,19 +52,25 @@ class BLBingoBoard extends LitElement {
         .bingo-cell {
           display: flex;
           align-items: center;
-          text-align: center;
           padding: 4px;
-          border: 1px solid var(--bl-color-text);
-          border-collapse: collapse;
-          background-color: var(--bl-color-background);
+          margin: 0;
           overflow: hidden;
+          text-align: center;
+          text-shadow: var(--bl-shadow-secondary);
+          background-color: var(--bl-color-background);
+        }
+
+        .bingo-cell span {
+          margin: auto;
         }
 
         .bingo-cell.selected1 {
           background-color: #3490DC;
+          text-shadow: none;
         }
         .bingo-cell.selected2 {
           background-color: #38C172;
+          text-shadow: none;
         }
       </style>
 

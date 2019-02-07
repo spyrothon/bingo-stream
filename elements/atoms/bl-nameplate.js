@@ -35,7 +35,7 @@ class BLNameplate extends LitElement {
           font-size: 18px;
           font-weight: 300;
           letter-spacing: 0.07em;
-          text-shadow: var(--bl-shadow-secondary);
+          text-shadow: var(--bl-shadow-tight);
         }
 
         .text {

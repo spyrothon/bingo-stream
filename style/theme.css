@@ -20,6 +20,7 @@
   --bl-gradient-background: linear-gradient(177deg, var(--pink-darkest), var(--purple-darkest) 70%, var(--purple-darker));
 
   --bl-shadow-primary: 0 0 16px var(--purple-darkest);
+  --bl-shadow-tight: 0 0 10px var(--black);
   --bl-shadow-secondary: 0 0 16px var(--orange);
   --bl-shadow--colorless: 0 0 16px;
   --bl-inset-shadow-primary: 0 0 30px var(--purple-darkest);
