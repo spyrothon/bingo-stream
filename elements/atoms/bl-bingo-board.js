@@ -58,6 +58,7 @@ class BLBingoBoard extends LitElement {
           text-align: center;
           text-shadow: var(--bl-shadow-secondary);
           background-color: var(--bl-color-background);
+          line-height: 1.3em;
         }
 
         .bingo-cell span {
