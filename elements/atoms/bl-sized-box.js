@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-class BLSizedBox extends LitElement {
+export class BLSizedBox extends LitElement {
   static get properties() {
     return {
       width: { type: Number },

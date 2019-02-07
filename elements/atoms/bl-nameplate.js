@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-class BLNameplate extends LitElement {
+export class BLNameplate extends LitElement {
   static get properties() {
     return {
       name: { type: String },

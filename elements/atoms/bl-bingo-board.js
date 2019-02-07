@@ -1,23 +1,23 @@
 import { LitElement, html } from 'lit-element';
 
-import { spyro2BingoList } from '../../bingo/spyro_4.1.js';
-import { bingoGenerator } from '../../bingo/generator.js';
-
-console.log();
+import { spyro2BingoList } from '../../app/bingo/spyro_4.1.js';
+import { bingoGenerator } from '../../app/bingo/generator.js';
 
 
-class BLBingoBoard extends LitElement {
+export class BLBingoBoard extends LitElement {
   constructor() {
     super();
-    this.goals = bingoGenerator(spyro2BingoList, {});
+    this.board = [];
   }
 
   static get properties() {
-    return {};
+    return {
+      board: { type: Array }
+    };
   }
 
-  renderGoals() {
-    return this.goals.map((goal) => {
+  renderBoard() {
+    return this.board.map((goal) => {
       return html`
         <span class="bingo-cell"><span>${goal.name}</span></span>
       `;
@@ -76,7 +76,7 @@ class BLBingoBoard extends LitElement {
       </style>
 
       <div class="bingo-board">
-        ${this.renderGoals()}
+        ${this.renderBoard()}
       </div>
     `;
   }

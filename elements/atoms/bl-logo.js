@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element';
 import logo from '../../assets/logo/transparent/bingo_league_logo@0,33x.png';
 
-class BLLogo extends LitElement {
+export class BLLogo extends LitElement {
   static get properties() {
     return {};
   }
