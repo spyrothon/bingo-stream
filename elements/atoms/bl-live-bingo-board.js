@@ -6,6 +6,7 @@ import { BLBingoBoard } from './bl-bingo-board';
 export class BLLiveBingoBoard extends connect(store, BLBingoBoard) {
   _mapStateToProps(state) {
     return {
+      loading: state.loading,
       board: state.bingoBoard
     };
   }

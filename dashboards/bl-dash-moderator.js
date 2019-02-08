@@ -5,8 +5,7 @@ import '../elements/atoms/bl-nameplate.js';
 import '../elements/atoms/bl-sized-box.js';
 
 import {
-  requestBingoBoard,
-  generateBingoBoard
+  requestBingoBoard
 } from '../app/actions';
 import { store } from '../app/store';
 

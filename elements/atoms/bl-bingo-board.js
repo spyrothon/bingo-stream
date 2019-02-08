@@ -12,11 +12,14 @@ export class BLBingoBoard extends LitElement {
 
   static get properties() {
     return {
+      loading: { type: Boolean },
       board: { type: Array }
     };
   }
 
   renderBoard() {
+    if(this.loading || !this.board) return null;
+
     return this.board.map((goal) => {
       return html`
         <span class="bingo-cell"><span>${goal.name}</span></span>
