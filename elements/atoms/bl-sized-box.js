@@ -30,7 +30,7 @@ export class BLSizedBox extends LitElement {
       </style>
 
       <div class="box">
-
+        <slot />
       </div>
     `;
   }

@@ -43,6 +43,7 @@ export class BLNameplate extends LitElement {
           margin: auto;
           padding: 8px 4px;
           z-index: 10;
+          font-weight: 500;
           background-color: ${this.color};
         }
 

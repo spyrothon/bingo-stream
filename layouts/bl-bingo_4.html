@@ -14,6 +14,7 @@
 
       .game {
         position: absolute;
+        --bl-color-background: #000;
       }
 
       #game1 {
@@ -38,19 +39,30 @@
 
       bl-live-bingo-board {
         position: absolute;
-        top: 220px;
-        right: 550px;
-        left: 550px;
-        width: 478px;
-        height: 460px;
+        top: 200px;
+        right: 564px;
+        left: 564px;
+        width: 450px;
+        height: 430px;
         margin: 10px;
       }
 
       #timer {
         position: absolute;
-        bottom: 60px;
-        right: 590px;
-        left: 590px;
+        bottom: 156px;
+        right: 600px;
+        left: 600px;
+      }
+
+      #omni {
+        position: absolute;
+        bottom: -1px;
+        right: 567px;
+        left: 567px;
+      }
+
+      .omni-content {
+        padding: 8px;
       }
 
 
@@ -60,10 +72,10 @@
 
       #team1_nameplates {
         position: absolute;
-        top: 414px;
-        bottom: 414px;
-        left: 0;
-        width: 551px;
+        top: 416px;
+        bottom: 416px;
+        left: 24px;
+        width: 519px;
       }
 
       /*.color-fill.team1 {
@@ -94,10 +106,10 @@
 
       #team2_nameplates {
         position: absolute;
-        top: 414px;
-        bottom: 414px;
-        right: 0;
-        width: 551px;
+        top: 416px;
+        bottom: 416px;
+        right: 24px;
+        width: 519px;
       }
 
       #nameplate1 {
@@ -136,25 +148,27 @@
   <body>
     <div class="layout">
       <div class="game-row">
-        <bl-sized-box class="game" id="game1" width="550" height="413"></bl-sized-box>
-        <bl-sized-box class="game" id="game2" width="550" height="413"></bl-sized-box>
-        <bl-sized-box class="game" id="game3" width="550" height="413"></bl-sized-box>
-        <bl-sized-box class="game" id="game4" width="550" height="413"></bl-sized-box>
+        <bl-sized-box class="game" id="game1" width="567" height="425"></bl-sized-box>
+        <bl-sized-box class="game" id="game2" width="567" height="425"></bl-sized-box>
+        <bl-sized-box class="game" id="game3" width="567" height="425"></bl-sized-box>
+        <bl-sized-box class="game" id="game4" width="567" height="425"></bl-sized-box>
       </div>
 
       <bl-logo></bl-logo>
       <bl-live-bingo-board></bl-live-bingo-board>
-      <bl-sized-box id="timer" width="418" height="72"></bl-sized-box>
+      <bl-sized-box id="timer" width="398" height="72"></bl-sized-box>
+      <bl-sized-box id="omni" width="464" height="128">
+      </bl-sized-box>
 
       <div id="team1_nameplates">
-        <bl-nameplate class="--upper" id="nameplate1" name="toopercentmilk" color="#3490DC"></bl-nameplate>
+        <bl-nameplate class="--upper" id="nameplate1" name="Arttles_" color="#3490DC"></bl-nameplate>
         <div class="color-fill team1"></div>
-        <bl-nameplate class="--lower" id="nameplate3" name="Arttles_" color="#3490DC"></bl-nameplate>
+        <bl-nameplate class="--lower" id="nameplate3" name="Ladybugg_" color="#3490DC"></bl-nameplate>
       </div>
       <div id="team2_nameplates">
-        <bl-nameplate class="--upper" id="nameplate2" name="Shaw8b" color="#38C172"></bl-nameplate>
+        <bl-nameplate class="--upper" id="nameplate2" name="Ratchet5" color="#38C172"></bl-nameplate>
         <div class="color-fill team2"></div>
-        <bl-nameplate class="--lower" id="nameplate4" name="TOTOzigemm" color="#38C172"></bl-nameplate>
+        <bl-nameplate class="--lower" id="nameplate4" name="Caitelady" color="#38C172"></bl-nameplate>
       </div>
     </div>
   </body>
